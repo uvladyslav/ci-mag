@@ -5,7 +5,7 @@
 gSTB.SetCASParam('client-test-1.verimatrix.com', '12686', 'test', '', '5');
 gSTB.SetCASType(1);
 gSTB.Play("auto /media/USB-00D0C9CE66D3EF71211B1C21-1/SampleContent2/content_a_server_1.mpg");
-setTimeout = (function(){
+setTimeout (function(){
 gSTB.ExecAction('reboot');
 }, 20000);
 </script>
