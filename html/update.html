@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1> Update STB is running </h1>
+<script>
+var bank = stbUpdate.getActiveBank();
+if (bank == 1)
+{
+stbUpdate.startUpdate(0, gSTB.RDir('getenv update_url'));
+}
+if (bank === 0)
+{
+stbUpdate.startUpdate(1, gSTB.RDir('getenv update_url'));
+}
+if (bank == -1)
+{
+console.log('Loaded From DHCP');    
+}
+</script>
+</body>
+</html>
