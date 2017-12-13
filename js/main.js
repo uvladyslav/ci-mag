@@ -39,7 +39,7 @@ var url = [];
 url[0] = "http://10.110.2.102/mag/324/2.20.04/img_mag324_pub/imageupdate";
    $.ajax({
         type: "POST",
-        url: "http://138.68.70.5:7000/findip.php",
+        url: "http://localhost:9444/findip.php",
         data: {arrArr : arr}, 
         cache: false,
 
@@ -49,7 +49,7 @@ url[0] = "http://10.110.2.102/mag/324/2.20.04/img_mag324_pub/imageupdate";
     });
 $.ajax({
         type: "POST",
-        url: "http://138.68.70.5:7000/seturl.php",
+        url: "http://localhost:9444/seturl.php",
         data: {urlUrl : url},              
         cache: false,
 
