@@ -1,2 +1,2 @@
 # ci-mag
-php -S domain:port
+run both start scripts
